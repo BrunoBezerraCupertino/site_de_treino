@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<nav>
+        <ul>
+            <li><a href="./Home.html">VOLTAR</a></li>
+
+        </ul>
+</nav>
+    <button onclick="myFunction()">tabela</button>
+
+<div id="mytabela">
+    <div class="responsive">
+        <p>tabela</p>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Titulo 1</th><th>Titulo 2</th><th>Titulo 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sla 1</td><td>sla 2</td><td>sla 3</td>
+                </tr>
+                <tr>
+                    <td>sla 1</td><td>sla 2</td><td>sla 3</td>
+                </tr>
+                <tr>
+                    <td>sla 1</td><td>sla 2</td><td>sla 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mytabela");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+<body>
+    <button onclick="myFunction2()">Formulario</button>
+    
+    <div id="myformulario">
+        <div>
+            <form action="#" method="get">
+            <p>Formulario</p>
+        
+            <p>
+                <label> 
+                    Nome:
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                </label>
+            </p>
+            <br>
+            <p>
+                <label> 
+                    senha:
+                    <input type="password" id="password" name="password"
+                     placeholder="Sua senha">
+                </label>
+            </p>
+            <br>
+            <p>
+                <label>
+                    checkbox
+                    <input type="checkbox" id="check" name="check">
+                </label>
+            </p>
+            <br>
+        <p>
+                <label> 
+                    escala:
+                    <input type="range" id="range" name="range" 
+                    list="tickmarks" step="10">
+                    
+                    <datalist id="tickmarks">
+                        <option value="0" label="0%">
+                        <option value="10">
+                        <option value="20">
+                        <option value="30">
+                        <option value="40">
+                        <option value="50" label="50%">
+                        <option value="60">
+                        <option value="70">
+                        <option value="80">
+                        <option value="90">
+                        <option value="100" label="100%">
+                      </datalist>
+                </label>
+                <div class="slider-wrapper">
+                    <input type="range" list="tickmarks" step="10">
+                  </div>
+            </p>
+            <br>
+            <p>
+                Apenas uma opção:
+        
+                <label >um
+                    <input type="radio" id="um" name="Apenas">
+                </label>
+        
+                <label>dois
+                    <input type="radio" id="dois" name="Apenas">
+                </label>
+        
+                <label>tres
+                    <input type="radio" id="tres" name="Apenas">
+                </label>
+            </p>
+            <br>
+            <p>
+                <label> 
+                    Data:
+                    <input type="date" id="date" name="date">
+                </label>
+            </p>
+            <br>
+            <p>
+                <label> 
+                    Hora:
+                    <input type="time" id="time" name="time">
+                </label>
+            </p>
+            <br>
+            <p>
+                <label> 
+                    Numero:
+                    <input type="number" id="number" name="number">
+                </label>
+            </p>
+            <br>
+            <p>
+                <label> 
+                    Seu email:
+                    <input type="email" id="email" name="email" 
+                    placeholder="ex: email@email.com">
+                </label>
+            </p>
+            <br>
+            <p>
+                <label> 
+                    Importe sua foto:
+                    <input type="file" id="file" name="file" 
+                    accept="image/*" multiple>
+                </label>
+            </p>
+            <br>
+            <p>
+                <label> 
+                    URL:
+                    <input type="url" id="url" name="url" 
+                    placeholder="www.blablabla.com...">
+                </label>
+            </p>
+            <br>
+            <p>
+                <label> 
+                    pesquisar:
+                    <input type="search" id="search" name="search" 
+                    placeholder="blabla..">
+                </label>
+            </p>
+            <br>
+            <p>
+                <label> 
+                    opções:
+                    <select id="select" name="select">
+                        <option value="1" label="label 1"></option>
+                        <option value="2" label="label 2"></option>
+                        <option value="3" label="label 3"></option>
+                        <option value="4" label="label 4"></option>
+                    </select>
+                </label>
+            </p>
+            <br>     
+            <p>
+                <button type="reset">Resetar</button>
+                <button type="submit">Enviar</button>
+            </p>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+    function myFunction2() {
+      var x = document.getElementById("myformulario");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>
